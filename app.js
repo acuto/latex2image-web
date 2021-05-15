@@ -142,6 +142,8 @@ function getLatexTemplate(equation) {
     \\usepackage{xcolor}
     \\usepackage{siunitx}
     \\usepackage[utf8]{inputenc}
+    \\usepackage{braket}
+    \\usepackage{qcircuit}
     \\thispagestyle{empty}
     \\begin{document}
     ${equation}
