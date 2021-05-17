@@ -134,8 +134,7 @@ app.listen(port, () => console.log(`Latex2Image listening at http://localhost:${
 
 // Get the LaTeX document template for the requested equation
 function getLatexTemplate(equation) {
-  return `
-    \\documentclass[12pt]{article}
+  return `\\documentclass[12pt]{article}
     \\usepackage{amsmath}
     \\usepackage{amssymb}
     \\usepackage{amsfonts}
@@ -143,6 +142,7 @@ function getLatexTemplate(equation) {
     \\usepackage{siunitx}
     \\usepackage[utf8]{inputenc}
     \\usepackage[braket, qm]{qcircuit}
+    \\usepackage{listings}
     \\thispagestyle{empty}
     \\begin{document}
     ${equation}
